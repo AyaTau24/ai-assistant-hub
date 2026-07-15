@@ -15,14 +15,15 @@ import { useSettings } from "./settings-provider";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-const NAV = [
+type NavItem = { to: string; label: string; icon: typeof LayoutDashboard; exact?: boolean };
+const NAV: NavItem[] = [
   { to: "/", label: "Dashboard", icon: LayoutDashboard, exact: true },
   { to: "/email", label: "Email Generator", icon: Mail },
   { to: "/summarizer", label: "Meeting Summarizer", icon: FileText },
   { to: "/research", label: "Research Assistant", icon: Search },
   { to: "/chat", label: "AI Chatbot", icon: MessageSquare },
   { to: "/settings", label: "Settings", icon: SettingsIcon },
-] as const;
+];
 
 export function AppShell() {
   const { theme, setTheme } = useSettings();
