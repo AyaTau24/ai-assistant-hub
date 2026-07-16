@@ -89,10 +89,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:description",
         content:
-          "Save time at work with AI-generated emails, meeting summaries, research briefs, and a productivity chatbot.",
+          "AI-powered workplace assistant for smart emails, meeting summaries, research, and a professional AI chatbot.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Workplace AI — Productivity Hub" },
+      { name: "twitter:description", content: "AI-powered workplace assistant for smart emails, meeting summaries, research, and a professional AI chatbot." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/522b2e92-0b12-4474-bc52-bada806979b7/id-preview-2dc2061b--aaea7393-70bb-40ad-a7ba-dbdbcaacc951.lovable.app-1784212276056.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/522b2e92-0b12-4474-bc52-bada806979b7/id-preview-2dc2061b--aaea7393-70bb-40ad-a7ba-dbdbcaacc951.lovable.app-1784212276056.png" },
     ],
     links: [
       {
